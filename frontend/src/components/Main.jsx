@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Toolbar from '@material-ui/core/Toolbar';
 import Avatar from '@material-ui/core/Avatar';
+import DisabledDialog from './DisabledDialog';
 import { createMuiTheme, ThemeProvider} from '@material-ui/core/styles';
 
 import About from './About.jsx';
@@ -96,6 +97,7 @@ export default function Main(props) {
   return (
     <div className={classes.root}>
       <ThemeProvider theme={darkTheme}>
+      <DisabledDialog/>
       <AppBar position="fixed">
         <Box display="flex" alignItems="center" justifyContent="space-between" padding={0}>
         <Toolbar>
